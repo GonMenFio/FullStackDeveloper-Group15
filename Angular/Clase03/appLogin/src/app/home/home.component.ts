@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
 			this.servicioUsuario = servicioUsuario
 		} */
 
+
+	lista: Array<string> = ["Carmen", "Marcela", "Oscar", "Carlos"]
+
 	constructor(private servicioUsuario: UsuarioService) { }
 
 
