@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row justify-content-center pt-4">
+		<form class="col-6">
+			<h2>{{ headline }}</h2>
+			<div class="form-group">
+				<input type='text' placeholder='Correo' (input)="correo=$event.target.value" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type='password' placeholder='Contraseña' class="form-control" (input)="contrasena=$event.target.value">
+			</div>
+			<div class="d-flex justify-content-center">
+				<button type='button' (click)="loguearse()" class="btn btn-success">Ingresar</button>
+			</div>
+
+
+
+		</form>
+	</div>
+</div>
