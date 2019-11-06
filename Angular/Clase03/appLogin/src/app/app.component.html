@@ -1,0 +1,10 @@
+<login [headline]="titulo" *ngIf="visible" (onLogging)="login($event)"></login>
+<app-home *ngIf="visible" [info]="infoUsuario"></app-home>
+<button (click)="cambiarVisibilidad()">Cambiar</button>
+
+<div class="container">
+	<div class="row justify-content-center">
+		<app-formulario></app-formulario>
+		<app-listado></app-listado>
+	</div>
+</div>
